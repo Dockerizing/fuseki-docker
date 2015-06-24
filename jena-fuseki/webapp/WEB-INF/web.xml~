@@ -245,7 +245,7 @@
     <mime-type>application/trig;charset=utf-8</mime-type>
   </mime-mapping>
 
-  <!-- If using security via Shiro - ->
+  <!-- If using security via Shiro -->
 
   <listener>
     <listener-class>org.apache.shiro.web.env.EnvironmentLoaderListener</listener-class>
@@ -264,5 +264,5 @@
     <dispatcher>INCLUDE</dispatcher>
     <dispatcher>ERROR</dispatcher>
   </filter-mapping>
-  -->
+
 </web-app>
