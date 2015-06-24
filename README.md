@@ -3,6 +3,7 @@ The Docker is based on the [stain/jena-fuseki](http://virtuoso.openlinksw.com/da
 
 ## Usage Instructions
 After building the image you can run it with the following options:
+
 `–p` to expose port 3030
   
   docker run -p <your fuseki2 port>:3030 fuseki2-docker:latest
@@ -10,9 +11,11 @@ After building the image you can run it with the following options:
 You can modify the port which should be used by the use of –p and run ./fuseki-server –port=<new port>
 docker run -p <your fuseki2 port>:<new port> fuseki2-docker:latest ./fuseki-server –port=<new port>
 
+
 `-d` to run the container in detached mode
 
   docker run –d -p <your fuseki2 port>:3030 fuseki2-docker:latest
+
 
 `-e` ADMIN_PASSWORD=<your password> to set your password, default password is admin 
 
