@@ -6,7 +6,7 @@ After building the image you can run it with the following options:
 
 `–p` to expose port 3030
   
-  docker run -p "your fuseki2 port":3030 fuseki2-docker:latest
+  ```docker run -p "your fuseki2 port":3030 fuseki2-docker:latest```
   
 You can modify the port which should be used by the use of –p and run ./fuseki-server –port="new port"
 docker run -p "your fuseki2 port":"new port" fuseki2-docker:latest ./fuseki-server –port="new port"
@@ -14,12 +14,12 @@ docker run -p "your fuseki2 port":"new port" fuseki2-docker:latest ./fuseki-serv
 
 `-d` to run the container in detached mode
 
-  docker run –d -p "your fuseki2 port":3030 fuseki2-docker:latest
+  ```docker run –d -p "your fuseki2 port":3030 fuseki2-docker:latest```
 
 
 `-e` ADMIN_PASSWORD="your password" to set your password, default password is admin 
 
-  docker run -p "your fuseki2 port":3030 –e ADMIN_PASSWORD="your password"  fuseki2-docker:latest
+  ```docker run -p "your fuseki2 port":3030 –e ADMIN_PASSWORD="your password"  fuseki2-docker:latest```
 
 ## Data
 The Fuseki data is stored at the docker volume `/fuseki` within the container. If you remove the container without a backup the stored data will be lost. To get more information about the variations of data persistence read [stain/jena-fuseki paragraph “Data persistence”](https://registry.hub.docker.com/u/stain/jena-fuseki/). 
